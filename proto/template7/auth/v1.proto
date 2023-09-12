@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package template7.auth.service.v1;
+
+option go_package = "github.com/Template7/protobuf/proto/template7/auth/v1;v1";
+
+enum Role {
+  Admin = 0;
+  Operator = 1;
+  User = 2;
+}
+
+enum AccountStatus {
+  Blocked = 0;
+  Initialized = 1;
+  Activated = 2;
+}
+
+message TokenClaims {
+  string userId = 1;
+  Role role = 2;
+  AccountStatus status = 3;
+}
