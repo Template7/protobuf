@@ -1,13 +1,15 @@
 syntax = "proto3";
 
-package template7.user.service.v1;
+package user;
+
+import "proto/template7/auth/v1.proto";
 
 option go_package = "github.com/Template7/protobuf/proto/template7/user/v1;v1";
 
 message UserInfoResponse {
   string userId = 1;
   string role = 2;
-  string status = 3;
+  auth.AccountStatus status = 3;
   string nickname = 4;
   string email = 5;
 }

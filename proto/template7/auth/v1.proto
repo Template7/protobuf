@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package template7.auth.service.v1;
+package auth;
 
 option go_package = "github.com/Template7/protobuf/proto/template7/auth/v1;v1";
 
