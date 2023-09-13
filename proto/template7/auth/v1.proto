@@ -37,3 +37,12 @@ message TokenClaims {
   Role role = 2;
   AccountStatus status = 3;
 }
+
+message LoginRequest {
+  string username = 1; // username
+  string password = 2; // password
+}
+
+message LoginResponse {
+  string token = 1;
+}
