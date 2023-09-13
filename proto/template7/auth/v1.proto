@@ -23,6 +23,15 @@ enum Currency {
   CNY = 3;
 }
 
+enum Unit {
+  One = 0;
+  Cent = 1;
+  Milli = 2;
+  Micro = 3;
+  Nano = 4;
+  Pico = 5;
+}
+
 message TokenClaims {
   string userId = 1;
   Role role = 2;
