@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package template7.user.service.v1;
+
+option go_package = "github.com/Template7/protobuf/proto/template7/user/v1;v1";
+
+message UserInfoResponse {
+  string userId = 1;
+  string role = 2;
+  string status = 3;
+  string nickname = 4;
+  string email = 5;
+}
+
+message UpdateUserInfoRequest {
+  string nickname = 1;
+}
