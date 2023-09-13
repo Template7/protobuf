@@ -16,6 +16,13 @@ enum AccountStatus {
   Activated = 2;
 }
 
+enum Currency {
+  NTD = 0;
+  USD = 1;
+  JPY = 2;
+  CNY = 3;
+}
+
 message TokenClaims {
   string userId = 1;
   Role role = 2;
