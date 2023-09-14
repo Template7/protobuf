@@ -8,7 +8,7 @@ option go_package = "github.com/Template7/protobuf/gen/proto/template7/user;v1";
 
 message UserInfoResponse {
   string userId = 1;
-  string role = 2;
+  auth.Role role = 2;
   auth.AccountStatus status = 3;
   string nickname = 4;
   string email = 5;
