@@ -4,45 +4,29 @@ package auth;
 
 option go_package = "github.com/Template7/protobuf/gen/proto/template7/auth;v1";
 
-enum Role {
+enum role {
   Admin = 0;
   Operator = 1;
   User = 2;
 }
 
-enum AccountStatus {
+enum accountStatus {
   Blocked = 0;
   Initialized = 1;
   Activated = 2;
 }
 
-enum Currency {
-  NTD = 0;
-  USD = 1;
-  JPY = 2;
-  CNY = 3;
-}
-
-enum Unit {
-  One = 0;
-  Cent = 1;
-  Milli = 2;
-  Micro = 3;
-  Nano = 4;
-  Pico = 5;
-}
-
-message TokenClaims {
+message tokenClaims {
   string userId = 1;
-  Role role = 2;
-  AccountStatus status = 3;
+  role role = 2;
+  accountStatus status = 3;
 }
 
-message LoginRequest {
+message loginRequest {
   string username = 1; // username
   string password = 2; // password
 }
 
-message LoginResponse {
+message loginResponse {
   string token = 1;
 }
