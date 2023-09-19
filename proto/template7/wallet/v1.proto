@@ -6,7 +6,7 @@ option go_package = "github.com/Template7/protobuf/gen/proto/template7/wallet;v1
 
 message wallet {
   string id = 1;
-
+  repeated balance balances = 2;
 }
 
 message balance {

@@ -3,10 +3,15 @@ syntax = "proto3";
 package user;
 
 import "proto/template7/auth/v1.proto";
+import "proto/template7/wallet/v1.proto";
 
 option go_package = "github.com/Template7/protobuf/gen/proto/template7/user;v1";
 
-message UserInfoResponse {
+message getUserWalletResponse {
+  repeated wallet.wallet wallets = 1;
+}
+
+message userInfoResponse {
   string userId = 1;
   auth.role role = 2;
   auth.accountStatus status = 3;
@@ -14,11 +19,11 @@ message UserInfoResponse {
   string email = 5;
 }
 
-message UpdateUserInfoRequest {
+message updateUserInfoRequest {
   string nickname = 1;
 }
 
-message CreateUserRequest {
+message createUserRequest {
   string username = 1;
   string password = 2;
   auth.role role = 3;
