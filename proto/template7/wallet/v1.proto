@@ -24,6 +24,13 @@ message withdrawRequest {
   uint32 amount = 2;
 }
 
+message transferRequest {
+  string fromWalletId = 1;
+  string toWalletId = 2;
+  currency currency = 3;
+  uint32 amount = 4;
+}
+
 enum currency {
   NTD = 0;
   USD = 1;
