@@ -5,15 +5,15 @@ package auth;
 option go_package = "github.com/Template7/protobuf/gen/proto/template7/auth;v1";
 
 enum role {
-  Admin = 0;
-  Operator = 1;
-  User = 2;
+  admin = 0;
+  operator = 1;
+  user = 2;
 }
 
 enum accountStatus {
-  Blocked = 0;
-  Initialized = 1;
-  Activated = 2;
+  blocked = 0;
+  initialized = 1;
+  activated = 2;
 }
 
 message tokenClaims {

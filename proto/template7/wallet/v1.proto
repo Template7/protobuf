@@ -32,17 +32,17 @@ message transferRequest {
 }
 
 enum currency {
-  NTD = 0;
-  USD = 1;
-  JPY = 2;
-  CNY = 3;
+  ntd = 0;
+  usd = 1;
+  jpy = 2;
+  cny = 3;
 }
 
 enum unit {
-  One = 0;
-  Cent = 1;
-  Milli = 2;
-  Micro = 3;
-  Nano = 4;
-  Pico = 5;
+  one = 0;
+  cent = 1;
+  milli = 2;
+  micro = 3;
+  nano = 4;
+  pico = 5;
 }
