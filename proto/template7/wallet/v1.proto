@@ -31,6 +31,16 @@ message transferRequest {
   uint32 amount = 4;
 }
 
+message currencyBalanceRecord {
+  uint64 id = 1;
+  io io = 2;
+  string amount = 3;
+  string amountBefore = 4;
+  string amountAfter = 5;
+  uint64 timestamp = 6;
+  string note = 7;
+}
+
 enum currency {
   ntd = 0;
   usd = 1;
@@ -45,4 +55,9 @@ enum unit {
   micro = 3;
   nano = 4;
   pico = 5;
+}
+
+enum io {
+  in = 0;
+  out = 1;
 }
