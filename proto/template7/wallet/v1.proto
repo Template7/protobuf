@@ -35,8 +35,8 @@ message currencyBalanceHistory {
   uint64 id = 1;
   direction direction = 2;
   string amount = 3;
-  string amountBefore = 4;
-  string amountAfter = 5;
+  string balanceBefore = 4;
+  string balanceAfter = 5;
   uint64 timestamp = 6;
   string note = 7;
 }
@@ -46,8 +46,8 @@ message balanceHistory {
   direction direction = 2;
   currency currency = 3;
   string amount = 4;
-  string amountBefore = 5;
-  string amountAfter = 6;
+  string balanceBefore = 5;
+  string balanceAfter = 6;
   uint64 timestamp = 7;
   string note = 8;
 }
