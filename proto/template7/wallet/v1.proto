@@ -48,7 +48,7 @@ message balanceHistory {
   string amount = 4;
   string balanceBefore = 5;
   string balanceAfter = 6;
-  uint64 timestamp = 7;
+  int64 timestamp = 7;
   string note = 8;
 }
 
